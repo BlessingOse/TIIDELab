@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: darkslategrey;
+    color: lavender;
+}
+
+img {
+    margin-left: 30%;
+    margin-top: 70px;
+    width: 30%;
+    height: 80%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header:hover {
+    background-color: darkslategrey;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: lightcoral;
+    text-decoration: solid;
+    line-height: 30px;
+    font-weight: 600px;
+}
+
+/*.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: purple;
+    animation: showsRight 1s ease forwards;
+    animation-delay: .4s;
+}*/
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li a {
+    display: block;
+    color: lightcoral;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: lightslategrey;
+}
+
+#homepage {
+    height: 100vh;
+    /*background: url('blk.jpg') no-repeat;*/
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#homepage-content {
+    max-width: 500px;
+}
+
+#homepage-content h2 {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700px;
+    white-space: nowrap;
+    line-height: 2.5;
+}
+
+#homepage-content h3 {
+    font-size: 30px;
+    font-weight: 700px;
+    white-space: nowrap;
+    color: lightcoral;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+/*.btn-box {
+    position: relative;
+    margin: 80%;
+    margin-bottom:
+    width: 345px;
+    height: 30px;
+}
+
+.btn-box a {
+    position: relative;
+    display: flex;
+}
+
+.btn-box a:hover {
+    color: lightcoral;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: lightcoral;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: lightcoral;
+}
+
+.btn-box a:nth-child(2):hover {
+    background: lightcoral;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover:before {
+    width: 100%;
+}*/
+
+#home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+
+#home-sci a:hover::before {
+    width: 100%;
+}
+
+#about-content {
+    height: 100vh;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 40px;
+    padding: 100px 50px;
+    border: 10px solid lightcoral;
+    border-radius: 10px;
+}
+
+.about {
+    color: whitesmoke;
+    text-align: center;
+    border: 2px solid lightcoral;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.about:hover {
+    color: lightcoral;
+    background-color: bisque;
+    font-size: 25px;
+}
+
+#contact {
+    height: 100vh;
+    border: 10px solid lightcoral;
+    display: flex;
+    align-items: center;
+}
+
+#to-contact-me {
+    padding: 20px;
+    width: 50px;
+    background-color: transparent;
+    font-size: 50px
+}
+
+#to-contact-me a:hover {
+    opacity: 0.9;
+}
+
+#my-skill {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 20px 0 40px;
+    padding: 30px;
+    border: 10px solid lightcoral;
+    border-radius: 10px;
+}
+
+#my-skill h2{
+    justify-content: space-between;
+    border: 2px lightcoral solid;
+    border-radius: 8px;
+}
+
+#my-skill h2:hover {
+    color: lightcoral;
+    background-color: bisque;
+}
+
+.checkbtn {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 50pxpx;
+    margin-left: 60%;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.flex-container {
+    align-items: center;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    padding-right: 80px;
+}
+
+@media screen and (max-width: 769px) {
+    body {
+        background-color: tan;
+    }
+
+    .logo {
+        color: blue;
+        font-size: 20px;
+        padding: 10px;
+        
+    }
+    
+    p {
+        color: maroon;
+        text-indent: 30px;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    h2 {
+        color: darkgrey;
+        font-size: 20px;
+    }
+
+    h3 {
+        color: blueviolet;
+    }
+
+    .home {
+        color: indigo;
+        font-size: 20px;
+    }
+
+    #my-skill {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .flex-container {
+        background-color: mediumorchid;
+        background-size: 100%;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
