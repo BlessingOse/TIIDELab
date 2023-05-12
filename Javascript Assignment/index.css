@@ -1,0 +1,45 @@
+* {
+    background-color: seagreen;
+}
+h1 {
+    background: relative;
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: blanchedalmond;
+    line-height: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    align-content: center;
+    padding: 8px;
+}
+
+h3 {
+    display: flex;
+    color: white;
+    font-size: 25px;
+    
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    padding-left: 50%;
+    border-radius: 10px;
+}
+
+.btn {
+    background: darkslategrey;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: yellow;
+    background-color: maroon;
+}
